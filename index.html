@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book tickets online | SkyThunder Airlines</title>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <header class="main-navigation">
+    <div class="main-navigation-meta">
+      <div class="main-navigation-meta-image">
+        <img src="images/logo_nav.png" alt="Logo" />
+      </div>
+      <div class="main-navigation-meta-menu">
+        <div class="login">
+          <button class="loginbtn">
+            <img src="images/login.png" alt="login" />
+          </button>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img src="images/menu.png" alt="menu" />
+          </button>
+          <div class="dropdown-content">
+            <a href="#service">Additional Services</a>
+            <a href="#pilot">Our Pilots</a>
+            <a href="#socialb">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-flightmanager-container">
+    <div class="tab-control-flights-section">
+      <form action="#">
+        <div class="form-container-main">
+          <div class="input-box">
+            <label for="from">From</label>
+            <input type="text" name="from" id="from" placeholder="Berlin" required />
+            <label for="to">To</label>
+            <input type="text" name="to" id="to" required />
+          </div>
+
+          <div class="input-box">
+            <label for="depart">Depart date</label>
+            <input type="date" name="depart" id="depart" required />
+            <label for="return">Return date</label>
+            <input type="date" name="return" id="return" />
+          </div>
+
+          <div class="input-box-children">
+            <div>
+              <label for="child">Children</label>
+              <input type="number" name="child" id="child" min="0" />
+            </div>
+            <div>
+              <label for="adult">Adults</label>
+              <input type="number" name="adult" id="adult" value="1" min="1" />
+            </div>
+          </div>
+          <div class="input-box-radio">
+            <span>Class</span>
+            <input type="radio" name="seat" id="business" />
+            <label for="business">Business</label>
+            <input type="radio" name="seat" id="economy" />
+            <label for="economy">Economy</label>
+          </div>
+          <div class="buttons">
+            <div class="button">
+              <button class="btn-primary" type="submit">
+                <span class="">Search flights</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="s-divider"></div>
+
+  <div class="main-services" id="service">
+    <h2>ADDITIONAL SERVICES</h2>
+    <div class="box">
+      <div class="image">
+        <img src="images/service-seats.jpg" />
+        <span>PRESELECTED SEATS</span>
+      </div>
+      <div class="image">
+        <img src="images/service-taxi.jpg" />
+        <span>TAXI FROM AIRPORT</span>
+      </div>
+      <div class="image">
+        <img src="images/service-meal.jpg" />
+        <span>CUSTOM MEALS</span>
+      </div>
+      <div class="image">
+        <img src="images/services-luggage.png" />
+        <span>ADDITIONAL BAGGAGE</span>
+      </div>
+      <div class="image">
+        <img src="images/service-hotel.jpg" />
+        <span>HOTEL RESERVATION</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="s-divider-top"></div>
+
+  <div class="main-pilots-container" id="pilot">
+    <h2>MEET OUR PILOTS!</h2>
+    <div class="box">
+      <div class="about">
+        <img src="images/adrian.png" />
+        <span>Adrian Mueller</span>
+      </div>
+      <div class="about">
+        <img src="images/juliette.png" />
+        <span>Juliette Barker</span>
+      </div>
+      <div class="about">
+        <img src="images/kaiden.png" />
+        <span>Kaiden McCain</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="s-divider"></div>
+
+  <div class="main-social-container" id="socialb">
+    <div class="social-box">
+      <div class="social">
+        <img src="images/facebook.png" alt="Facebook" />
+      </div>
+      <div class="social">
+        <img src="images/twitter.png" alt="Twitter" />
+      </div>
+      <div class="social">
+        <img src="images/instagram.png" alt="Instagram" />
+      </div>
+      <div class="social">
+        <img src="images/linkedin.png" alt="LinkedIn" />
+      </div>
+    </div>
+  </div>
+
+  <div class="s-divider-top"></div>
+
+  <footer>
+    <div class="codeCademy">
+      <span>CodeCademy challenge project "Company Website"</span>
+    </div>
+    <div class="payment-container-main"></div>
+  </footer>
+</html>

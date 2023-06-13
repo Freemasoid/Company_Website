@@ -1,0 +1,703 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Ropa+Sans:ital@0;1&display=swap");
+
+body {
+  background-color: #ffe46f;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.main-services span {
+  font-family: "Ropa Sans", sans-serif;
+  font-weight: bold;
+}
+
+.main-pilots-container span {
+  font-family: "Exo", sans-serif;
+}
+
+form label {
+  font-family: "Exo", sans-serif;
+}
+
+form input {
+  font-family: "Exo", sans-serif;
+}
+
+form span {
+  font-family: "Exo", sans-serif;
+}
+
+form .form-container-main .buttons .button span {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.s-divider {
+  margin: auto;
+  margin-top: 0;
+  position: relative;
+  overflow: hidden;
+  height: 20px;
+  max-width: 1440px;
+}
+
+.s-divider-top {
+  margin: auto;
+  margin-top: 0;
+  position: relative;
+  overflow: hidden;
+  height: 20px;
+  max-width: 1440px;
+}
+
+.s-divider:after {
+  content: "";
+  display: block;
+  margin: -25px auto 0;
+  width: 100%;
+  height: 25px;
+  border-radius: 125px/12px;
+  box-shadow: 0 0 10px black;
+}
+
+.s-divider-top:after {
+  content: "";
+  display: block;
+  margin: 25px auto 0;
+  width: 100%;
+  height: 25px;
+  border-radius: 125px/12px;
+  box-shadow: 0 -4px 10px black;
+}
+
+.main-navigation {
+  background-color: white;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main-navigation-meta {
+  height: 64px;
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px;
+}
+
+.main-navigation-meta-menu {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  align-items: center;
+}
+
+.main-navigation-meta-menu .login .loginbtn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  align-items: center;
+  padding: 0;
+  height: 55px;
+  width: 65px;
+  margin-right: 30px;
+}
+
+.main-navigation-meta-menu .login .loginbtn img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-navigation-meta-menu .dropdown .dropbtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 46px;
+  height: 55px;
+}
+
+.main-navigation-meta-menu .dropdown .dropbtn img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-navigation-meta-menu .login .loginbtn img:active {
+  filter: drop-shadow(2px 4px 3px rgb(168, 168, 168));
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 180px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  right: 0;
+  font-family: "Exo", sans-serif;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: gainsboro;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ffe56fb9;
+}
+
+.main-navigation-meta-image {
+  text-align: center;
+}
+
+.main-navigation-meta-image img {
+  width: 300px;
+}
+
+.main-flightmanager-container {
+  max-width: 1440px;
+  background-image: url(images/fluffy_clouds.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-control-flights-section {
+  background-color: white;
+  max-width: 810px;
+  width: 100%;
+  height: 180px;
+  padding: 30px 20px;
+  border-radius: 5px;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-control-flights-section form {
+  position: relative;
+}
+
+.tab-control-flights-section form .form-container-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+form .form-container-main .input-box {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3 - 15px);
+  margin: 5px 0;
+}
+
+form .form-container-main .input-box-radio {
+  display: inline-block;
+  margin-left: 5px;
+  text-align: center;
+}
+
+form .form-container-main .buttons .button {
+  display: inline-block;
+  box-sizing: border-box;
+  color: black;
+}
+
+form .form-container-main .buttons button:active {
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.form-container-main .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 50%;
+}
+
+.form-container-main {
+  margin: 0 20px;
+}
+
+.input-box label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2e2e2e;
+  margin-top: 10px;
+}
+
+.input-box-radio label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2e2e2e;
+}
+
+.input-box-children label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2e2e2e;
+  margin-top: 10px;
+}
+
+.input-box-radio span {
+  padding-right: 10px;
+}
+
+input[type="radio"] {
+  vertical-align: middle;
+  margin-top: 0px;
+}
+
+input[type="date"] {
+  appearance: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.input-box input {
+  height: 40px;
+  margin: 5px 0;
+  padding: 0 15px;
+  outline: none;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+}
+
+.input-box-children div {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box-children input {
+  height: 40px;
+  margin: 5px 0;
+  padding: 0 15px;
+  outline: none;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  display: flex;
+  text-align: center;
+}
+
+.input-box input:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-box-children input:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-box-children input[type="number"] {
+  max-width: 50px;
+}
+
+.tab-control-flights-section form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 200px;
+  border: none;
+  outline: none;
+  background-color: #ffe46f;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.main-services {
+  max-width: 1440px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  display: block;
+}
+
+.main-services h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.main-services .box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.main-services .box .image {
+  height: 250px;
+  width: 230px;
+  background-color: white;
+  margin: 20px 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.main-services .box .image:hover {
+  transform: scale(1.01, 1.01);
+}
+
+.main-services .box .image::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-services .box .image:hover::after {
+  opacity: 1;
+}
+
+.main-services .box .image img {
+  height: 180px;
+  width: 230px;
+}
+
+.main-services .box .image span {
+  margin: 20px;
+  background-color: #ffe46f;
+  height: 40px;
+  width: 180px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.main-pilots-container {
+  background: white;
+  height: 100%;
+  max-width: 1440px;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+.main-pilots-container h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.main-pilots-container .box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.main-pilots-container .box .about {
+  background-color: black;
+  width: 280px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.main-pilots-container .box .about span {
+  color: white;
+  margin: 20px;
+  font-size: 20pt;
+  text-align: center;
+}
+
+.main-pilots-container .box .about img {
+  border-radius: 10px;
+}
+
+.main-social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-social-container .social-box {
+  display: flex;
+  height: 50px;
+  width: 300px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-social-container .social-box .social {
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  border-radius: 50% 50%;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease-in-out;
+}
+
+.main-social-container .social-box .social img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-social-container .social-box .social:hover {
+  transform: translate(-0%, -30%);
+}
+
+.main-social-container .social-box .social::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: transform 0.4s ease-in-out;
+}
+
+.main-social-container .social-box .social:hover::after {
+  opacity: 1;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  max-width: 1440px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+footer .codeCademy {
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 10px;
+}
+
+@media (max-width: 645px) {
+  .main-navigation-meta-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-navigation-meta-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-navigation-meta-menu .login .loginbtn {
+    margin-right: 0;
+  }
+
+  .dropbtn {
+    padding: 0;
+  }
+
+  .tab-control-flights-section {
+    overflow: hidden;
+    height: 300px;
+    padding: 10px 20px;
+  }
+  form .form-container-main .input-box {
+    width: calc(100% / 2 - 15px);
+  }
+
+  .input-box-children {
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: auto;
+  }
+
+  .input-box-children label {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .input-box-children input {
+    margin-right: 5px;
+  }
+
+  .form-container-main .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .input-box-radio {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 530px) {
+  .main-navigation-meta {
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    height: 40px;
+    flex-wrap: wrap;
+  }
+
+  .main-navigation-meta-menu {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+  }
+
+  .main-navigation-meta-menu .login .loginbtn {
+    width: 40px;
+  }
+
+  .main-navigation-meta-menu .dropdown .dropbtn {
+    width: 30px;
+    height: 37px;
+  }
+
+  .main-navigation-meta-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+  }
+  .main-navigation-meta-image img {
+    width: 200px;
+    height: auto;
+    text-align: center;
+  }
+
+  .main-flightmanager-container {
+    height: 650px;
+  }
+
+  .tab-control-flights-section {
+    height: 570px;
+    margin-top: 10px;
+  }
+
+  form {
+    height: 500px;
+    display: flex;
+  }
+
+  form .form-container-main .input-box {
+    width: calc(100% / 1 - 15px);
+    margin: auto;
+  }
+
+  form .form-container-main {
+    margin-top: -20px;
+  }
+
+  .input-box-children {
+    display: flex;
+    width: calc(100% / 1 - 15px);
+    padding: 10px 0;
+  }
+
+  .input-box-children input {
+    padding: 0 15px;
+  }
+
+  .input-box-children label {
+    display: flex;
+    justify-content: center;
+  }
+
+  .input-box-radio {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: calc(100% / 1 - 15px);
+    justify-content: space-evenly;
+  }
+
+  form .form-container-main .input-box-radio {
+    margin-left: 0;
+  }
+}
